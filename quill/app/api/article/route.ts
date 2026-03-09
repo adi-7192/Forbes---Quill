@@ -13,6 +13,7 @@ interface ArticleMetadata {
   section?: string;
   formality?: string;
   perspective?: string;
+  [key: string]: unknown;
 }
 
 export async function POST(req: Request) {
