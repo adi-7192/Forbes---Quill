@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import { writeFile, mkdir } from "fs/promises";
 import path from "path";
-import { logFeedback } from "@/lib/db";
 
 export async function POST(req: Request) {
   try {
@@ -29,18 +28,6 @@ export async function POST(req: Request) {
     const filePath = path.join(feedbackDir, `${feedbackId}.json`);
     await writeFile(filePath, JSON.stringify(feedbackData, null, 2));
 
-    try {
-      logFeedback({
-        id: feedbackId,
-        article_text: article_text,
-        metadata: metadata,
-        rating: rating,
-        corrections: corrections,
-        timestamp: feedbackData.timestamp
-      });
-    } catch (dbErr) {
-      console.error("Failed to write feedback to DB:", dbErr);
-    }
 
     return NextResponse.json({ 
       success: true, 

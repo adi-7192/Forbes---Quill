@@ -3,7 +3,6 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import { ARTICLE_DRAFT_PROMPT, SAFETY_FILTER_PROMPT, PROMPT_VERSION, FORBIDDEN_WORDS } from "@/lib/prompts";
 import { writeFile, readdir, readFile } from "fs/promises";
 import path from "path";
-import { logAudit } from "@/lib/db";
 
 interface ArticleMetadata {
   hook_type?: string;
@@ -143,18 +142,6 @@ export async function POST(req: Request) {
           safety_flags: safetyFlags
         };
         
-        try {
-          logAudit({
-            id: logData.id,
-            article_text: logData.article_text,
-            metadata: logData.metadata,
-            safety_flags: logData.safety_flags,
-            timestamp: logData.timestamp,
-            prompt_version: logData.prompt_version
-          });
-        } catch (dbErr) {
-          console.error("Failed to write to DB:", dbErr);
-        }
 
         await writeFile("/tmp/quill_last_output.json", JSON.stringify({
           ...logData, 
