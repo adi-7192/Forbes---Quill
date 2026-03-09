@@ -1,0 +1,13 @@
+{
+  "name": "forbes-quill-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "quill"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=quill",
+    "build": "npm run build --workspace=quill",
+    "start": "npm run start --workspace=quill"
+  }
+}
