@@ -20,7 +20,7 @@ interface ResearchFormProps {
   onSuccess: (query: string, data: ResearchResponse) => void;
   loadedHistory: HistoryItem | null;
   onClearHistory: () => void;
-  onDraftGenerated: (draft: string, safetyFlags?: any) => void;
+  onDraftGenerated: (draft: string, safetyFlags?: Record<string, unknown>) => void;
 }
 
 export function ResearchForm({ onSuccess, loadedHistory, onClearHistory, onDraftGenerated }: ResearchFormProps) {

@@ -18,7 +18,7 @@ export default function Home() {
 
   // Cross-tab communication
   const [incomingDraft, setIncomingDraft] = useState<string>("");
-  const [incomingSafetyFlags, setIncomingSafetyFlags] = useState<any>(null);
+  const [incomingSafetyFlags, setIncomingSafetyFlags] = useState<Record<string, unknown> | null>(null);
 
   const handleSelectHistory = (item: HistoryItem) => {
     setActiveHistoryItem(item);
@@ -30,7 +30,7 @@ export default function Home() {
     }
   };
 
-  const handleDraftGenerated = (draftText: string, safetyFlags?: any) => {
+  const handleDraftGenerated = (draftText: string, safetyFlags?: Record<string, unknown>) => {
     setIncomingDraft(draftText);
     setIncomingSafetyFlags(safetyFlags || null);
     setActiveTab("seo");
