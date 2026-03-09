@@ -1,0 +1,16 @@
+# Agent and local state
+.agent/
+.gemini/
+.DS_Store
+
+# Logs and outputs
+/evals/results/
+/tmp/
+quill_audit.db
+
+# UI and dependencies
+node_modules/
+.next/
+dist/
+build/
+.env*.local

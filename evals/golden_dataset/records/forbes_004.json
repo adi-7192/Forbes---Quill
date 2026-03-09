@@ -1,0 +1,65 @@
+{
+    "id": "forbes_004",
+    "source_url": "https://www.forbes.com/sites/chuckbrooks/2025/08/22/artificial-intelligence-and-the-next-great-transformation/",
+    "article_metadata": {
+        "headline": "Artificial Intelligence and the Next Great Transformation",
+        "subheadline": null,
+        "author": "Chuck Brooks",
+        "author_type": "Contributor",
+        "publish_date": "2025-08-22",
+        "section": "Innovation / AI",
+        "tags": [
+            "AI",
+            "digital transformation",
+            "cybersecurity",
+            "national security",
+            "quantum computing",
+            "governance",
+            "future of work"
+        ],
+        "estimated_read_time_mins": 6,
+        "word_count": 820
+    },
+    "content_structure": {
+        "hook_type": "historical_analogy",
+        "hook_text": "Transformative technologies have had a profound impact on civilization over the course of human history. The steam engine was the progenitor of the first industrial revolution...",
+        "num_sections": 5,
+        "has_subheadings": true,
+        "has_pullquote": false,
+        "has_data_point": false,
+        "has_listicle": true,
+        "cta_type": "soft",
+        "closing_type": "call_to_action",
+        "article_format": "thought_leadership"
+    },
+    "tone_profile": {
+        "formality": "formal",
+        "perspective": "third-person",
+        "sentiment": "optimistic_cautionary",
+        "voice": "global_thought_leader",
+        "authority_signals": [
+            "historical_reference",
+            "industry_observation",
+            "domain_expertise"
+        ],
+        "notable_phrases": [
+            "with great power comes vast responsibility",
+            "AI is not fate; it is guidance"
+        ],
+        "emotional_register": "visionary"
+    },
+    "structural_patterns": {
+        "opening_with_definition": false,
+        "uses_historical_framing": true,
+        "uses_bullet_sections": true,
+        "ends_with_prediction": false,
+        "ends_with_call_to_action": true,
+        "author_bio_cta": true
+    },
+    "eval_scores": {
+        "headline_quality": null,
+        "tone_match": null,
+        "structure_adherence": null,
+        "metadata_accuracy": null
+    }
+}

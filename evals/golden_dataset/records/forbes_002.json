@@ -1,0 +1,68 @@
+{
+    "id": "forbes_002",
+    "source_url": "https://www.forbes.com/sites/gilpress/2025/03/30/are-we-at-peak-ai-bubble-and-the-cusp-of-ai-moment/",
+    "article_metadata": {
+        "headline": "Are We At Peak AI Bubble And The Cusp Of 'AI Moment'?",
+        "subheadline": null,
+        "author": "Gil Press",
+        "author_type": "Senior Contributor",
+        "publish_date": "2025-03-30",
+        "section": "Innovation / Enterprise Tech",
+        "tags": [
+            "AI",
+            "AI bubble",
+            "venture capital",
+            "DeepSeek",
+            "AGI",
+            "technology history",
+            "Moore's Law",
+            "marketing"
+        ],
+        "estimated_read_time_mins": 12,
+        "word_count": 1820
+    },
+    "content_structure": {
+        "hook_type": "data_point",
+        "hook_text": "CoreWeave, the first AI startup to go public, disappointed investors, ending its first day of trading with a market cap of $19 billion.",
+        "num_sections": 6,
+        "has_subheadings": false,
+        "has_pullquote": false,
+        "has_data_point": true,
+        "has_listicle": false,
+        "cta_type": "none",
+        "closing_type": "provocative_quote",
+        "article_format": "analytical_longform"
+    },
+    "tone_profile": {
+        "formality": "formal",
+        "perspective": "third-person",
+        "sentiment": "critical_analytical",
+        "voice": "technology_historian",
+        "authority_signals": [
+            "academic_citation",
+            "data_citation",
+            "expert_quote",
+            "historical_reference",
+            "named_research_study"
+        ],
+        "notable_phrases": [
+            "marketing campaign",
+            "desperate propaganda",
+            "disinformation campaign"
+        ],
+        "emotional_register": "skeptical_intellectual"
+    },
+    "structural_patterns": {
+        "opening_with_definition": false,
+        "uses_rhetorical_questions": true,
+        "uses_numbered_reasons": false,
+        "ends_with_prediction": true,
+        "author_bio_cta": true
+    },
+    "eval_scores": {
+        "headline_quality": null,
+        "tone_match": null,
+        "structure_adherence": null,
+        "metadata_accuracy": null
+    }
+}

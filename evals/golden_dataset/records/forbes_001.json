@@ -1,0 +1,63 @@
+{
+    "id": "forbes_001",
+    "source_url": "https://www.forbes.com/sites/georgedeeb/2026/01/23/artificial-intelligence-can-do-everything-now-protect-yourself/",
+    "article_metadata": {
+        "headline": "Artificial Intelligence Can Do Everything Now—Protect Yourself",
+        "subheadline": null,
+        "author": "George Deeb",
+        "author_type": "Contributor",
+        "publish_date": "2026-01-23",
+        "section": "Entrepreneurs",
+        "tags": [
+            "AI",
+            "startups",
+            "business strategy",
+            "automation",
+            "job market",
+            "technology"
+        ],
+        "estimated_read_time_mins": 4,
+        "word_count": 720
+    },
+    "content_structure": {
+        "hook_type": "bold_claim",
+        "hook_text": "Artificial intelligence (AI) has been more than a buzzword for the last couple years; it is literally taking over every single aspect of how businesses are run.",
+        "num_sections": 1,
+        "has_subheadings": false,
+        "has_pullquote": false,
+        "has_data_point": false,
+        "has_listicle": true,
+        "cta_type": "soft",
+        "closing_type": "call_to_action",
+        "article_format": "opinion_essay"
+    },
+    "tone_profile": {
+        "formality": "semi-formal",
+        "perspective": "first-person",
+        "sentiment": "cautionary",
+        "voice": "entrepreneurial_advisor",
+        "authority_signals": [
+            "personal_research",
+            "industry_observation"
+        ],
+        "notable_phrases": [
+            "shaking in their boots",
+            "resting on your laurels",
+            "doom and gloom"
+        ],
+        "emotional_register": "urgent"
+    },
+    "structural_patterns": {
+        "opening_with_definition": false,
+        "uses_rhetorical_questions": true,
+        "uses_numbered_reasons": true,
+        "ends_with_prediction": true,
+        "author_bio_cta": true
+    },
+    "eval_scores": {
+        "headline_quality": null,
+        "tone_match": null,
+        "structure_adherence": null,
+        "metadata_accuracy": null
+    }
+}

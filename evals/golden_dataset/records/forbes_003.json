@@ -1,0 +1,68 @@
+{
+    "id": "forbes_003",
+    "source_url": "https://www.forbes.com/councils/forbestechcouncil/2025/07/24/when-to-use-ai-vs-human-judgment-a-framework-for-tech-leaders/",
+    "article_metadata": {
+        "headline": "When To Use AI Vs. Human Judgment: A Framework For Tech Leaders",
+        "subheadline": null,
+        "author": "Haider Ali",
+        "author_type": "Forbes Councils Member",
+        "publish_date": "2025-07-24",
+        "section": "Innovation / Forbes Technology Council",
+        "tags": [
+            "AI",
+            "human judgment",
+            "leadership",
+            "technology strategy",
+            "AIM framework",
+            "enterprise AI",
+            "CTO",
+            "decision making"
+        ],
+        "estimated_read_time_mins": 5,
+        "word_count": 760
+    },
+    "content_structure": {
+        "hook_type": "statistic",
+        "hook_text": "A recent McKinsey poll indicates that AI is being used in 78% of organizations in some form or another.",
+        "num_sections": 5,
+        "has_subheadings": true,
+        "has_pullquote": false,
+        "has_data_point": true,
+        "has_listicle": true,
+        "cta_type": "hard",
+        "closing_type": "inspirational_statement",
+        "article_format": "framework_explainer"
+    },
+    "tone_profile": {
+        "formality": "semi-formal",
+        "perspective": "second-person",
+        "sentiment": "balanced_prescriptive",
+        "voice": "executive_advisor",
+        "authority_signals": [
+            "data_citation",
+            "named_research_study",
+            "expert_framework",
+            "industry_statistic"
+        ],
+        "notable_phrases": [
+            "AIM framework",
+            "full handoff",
+            "gray zones"
+        ],
+        "emotional_register": "pragmatic"
+    },
+    "structural_patterns": {
+        "opening_with_definition": true,
+        "uses_rhetorical_questions": false,
+        "uses_named_framework": true,
+        "ends_with_prediction": false,
+        "ends_with_principle": true,
+        "author_bio_cta": true
+    },
+    "eval_scores": {
+        "headline_quality": null,
+        "tone_match": null,
+        "structure_adherence": null,
+        "metadata_accuracy": null
+    }
+}
