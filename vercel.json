@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd quill && npm run build",
+  "outputDirectory": "quill/.next",
+  "installCommand": "cd quill && npm install",
+  "framework": "nextjs"
+}
