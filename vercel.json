@@ -1,4 +1,6 @@
 {
-  "framework": "nextjs",
-  "rootDirectory": "quill"
+  "buildCommand": "npm run build",
+  "outputDirectory": "quill/.next",
+  "installCommand": "npm install",
+  "framework": "nextjs"
 }
