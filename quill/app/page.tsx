@@ -8,6 +8,7 @@ import { KPIDashboard } from "@/components/KPIDashboard";
 import { Sidebar } from "@/components/Sidebar";
 import { useHistory, HistoryItem } from "@/hooks/useHistory";
 import { PanelLeftOpen } from "lucide-react";
+import { SafetyFlagsData } from "@/components/SEOForm";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<'research' | 'seo' | 'distribution' | 'stats'>('research');
@@ -18,7 +19,7 @@ export default function Home() {
 
   // Cross-tab communication
   const [incomingDraft, setIncomingDraft] = useState<string>("");
-  const [incomingSafetyFlags, setIncomingSafetyFlags] = useState<Record<string, unknown> | null>(null);
+  const [incomingSafetyFlags, setIncomingSafetyFlags] = useState<SafetyFlagsData | null>(null);
 
   const handleSelectHistory = (item: HistoryItem) => {
     setActiveHistoryItem(item);
@@ -30,7 +31,7 @@ export default function Home() {
     }
   };
 
-  const handleDraftGenerated = (draftText: string, safetyFlags?: Record<string, unknown>) => {
+  const handleDraftGenerated = (draftText: string, safetyFlags?: SafetyFlagsData) => {
     setIncomingDraft(draftText);
     setIncomingSafetyFlags(safetyFlags || null);
     setActiveTab("seo");

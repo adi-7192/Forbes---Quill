@@ -19,12 +19,23 @@ interface SEOResponse {
   word_count: number;
 }
 
+export interface SafetyFlag {
+  type: string;
+  text_snippet: string;
+  reason: string;
+}
+
+export interface SafetyFlagsData {
+  requires_verification: boolean;
+  flags: SafetyFlag[];
+}
+
 interface SEOFormProps {
   onSuccess: (draft: string, data: SEOResponse) => void;
   loadedHistory: HistoryItem | null;
   onClearHistory: () => void;
   incomingDraft?: string;
-  incomingSafetyFlags?: Record<string, unknown> | null;
+  incomingSafetyFlags?: SafetyFlagsData | null;
   onNextTab?: () => void;
 }
 
@@ -131,11 +142,11 @@ export function SEOForm({ onSuccess, loadedHistory, onClearHistory, incomingDraf
                   The generated draft contains the following claims that must be verified by an editor before publication:
                 </div>
                 <ul className="space-y-3">
-                  {(incomingSafetyFlags as any).flags.map((flag: Record<string, unknown>, idx: number) => (
+                  {incomingSafetyFlags.flags.map((flag, idx) => (
                     <li key={idx} className="bg-white p-3 rounded-md border border-amber-100 shadow-sm">
-                      <div className="text-xs font-bold text-amber-800 uppercase tracking-widest mb-1">{(flag.type as string).replace('_', ' ')}</div>
+                      <div className="text-xs font-bold text-amber-800 uppercase tracking-widest mb-1">{flag.type.replace('_', ' ')}</div>
                       <div className="text-[13px] font-medium text-gray-900 leading-snug">&quot;{flag.text_snippet}&quot;</div>
-                      <div className="text-[13px] text-gray-500 mt-1 italic">Reason: {flag.reason as string}</div>
+                      <div className="text-[13px] text-gray-500 mt-1 italic">Reason: {flag.reason}</div>
                     </li>
                   ))}
                 </ul>

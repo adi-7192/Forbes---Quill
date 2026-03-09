@@ -6,6 +6,7 @@ import { SkeletonLoader } from "./SkeletonLoader";
 import { HistoryItem } from "@/hooks/useHistory";
 import { PenLine, RefreshCcw } from "lucide-react";
 import { trackGenerationStart, trackGenerationComplete } from "@/lib/analytics";
+import { SafetyFlagsData } from "./SEOForm";
 
 interface ResearchResponse {
   keyDataPoints: string;
@@ -20,7 +21,7 @@ interface ResearchFormProps {
   onSuccess: (query: string, data: ResearchResponse) => void;
   loadedHistory: HistoryItem | null;
   onClearHistory: () => void;
-  onDraftGenerated: (draft: string, safetyFlags?: Record<string, unknown>) => void;
+  onDraftGenerated: (draft: string, safetyFlags?: SafetyFlagsData) => void;
 }
 
 export function ResearchForm({ onSuccess, loadedHistory, onClearHistory, onDraftGenerated }: ResearchFormProps) {
