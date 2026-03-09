@@ -5,6 +5,16 @@ import { writeFile, readdir, readFile } from "fs/promises";
 import path from "path";
 import { logAudit } from "@/lib/db";
 
+interface ArticleMetadata {
+  hook_type?: string;
+  word_count?: number;
+  authority_signals_used?: string[];
+  suggested_tags?: string[];
+  section?: string;
+  formality?: string;
+  perspective?: string;
+}
+
 export async function POST(req: Request) {
   try {
     const { query, researchData } = await req.json();
@@ -66,7 +76,7 @@ export async function POST(req: Request) {
     // Extract JSON metadata block from the end of the response
     // We look for the LAST occurrence of a JSON-like block
     let articleText = fullText;
-    let metadata = {};
+    let metadata: ArticleMetadata = {};
 
     // Find the last opening brace and closing brace balance
     const lastBraceIndex = fullText.lastIndexOf('{');
@@ -149,9 +159,9 @@ export async function POST(req: Request) {
           ...logData, 
           forbidden_words: forbiddenFound,
           metadata: {
-            ...(logData.metadata as any), 
-            hook_type: (logData.metadata as any).hook_type || "statistic", 
-            tags: (logData.metadata as any).suggested_tags || []
+            ...logData.metadata, 
+            hook_type: logData.metadata.hook_type || "statistic", 
+            tags: logData.metadata.suggested_tags || []
           }
         }, null, 2));
       } catch (err) {
