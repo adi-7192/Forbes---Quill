@@ -134,7 +134,7 @@ export function SEOForm({ onSuccess, loadedHistory, onClearHistory, incomingDraf
                   {incomingSafetyFlags.flags.map((flag: any, idx: number) => (
                     <li key={idx} className="bg-white p-3 rounded-md border border-amber-100 shadow-sm">
                       <div className="text-xs font-bold text-amber-800 uppercase tracking-widest mb-1">{flag.type.replace('_', ' ')}</div>
-                      <div className="text-[13px] font-medium text-gray-900 leading-snug">"{flag.text_snippet}"</div>
+                      <div className="text-[13px] font-medium text-gray-900 leading-snug">&quot;{flag.text_snippet}&quot;</div>
                       <div className="text-[13px] text-gray-500 mt-1 italic">Reason: {flag.reason}</div>
                     </li>
                   ))}

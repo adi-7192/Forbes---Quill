@@ -2,9 +2,8 @@
 // Using Node.js built-in experimental SQLite (available in Node 22.5.0+)
 import { DatabaseSync } from 'node:sqlite';
 import path from 'path';
-import fs from 'fs';
 
-let db: any = null;
+let db: DatabaseSync | null = null;
 
 export function getDb() {
   if (db) return db;
@@ -42,8 +41,8 @@ export function getDb() {
 export function logAudit(data: {
   id: string;
   article_text: string;
-  metadata: any;
-  safety_flags: any;
+  metadata: Record<string, unknown>;
+  safety_flags: Record<string, unknown>;
   timestamp: string;
   prompt_version: string;
 }) {
@@ -67,9 +66,9 @@ export function logFeedback(data: {
   id: string;
   audit_log_id?: string;
   article_text: string;
-  metadata: any;
+  metadata: Record<string, unknown>;
   rating: string;
-  corrections?: any;
+  corrections?: Record<string, unknown>;
   timestamp: string;
 }) {
   const database = getDb();
